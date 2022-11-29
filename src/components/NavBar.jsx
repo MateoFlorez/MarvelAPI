@@ -1,9 +1,10 @@
 import { NavLink } from "react-router-dom";
 import logo from "../assets/logo.png";
 
+
 export function NavBar() {
   return (
-    <nav className="bg-black py-4 flex items-center justify-center font-bold text-white w-full">
+    <nav className="bg-stone-800 py-4 flex items-center justify-center font-bold text-white w-full">
       <ul className="flex items-center">
         <li className="">
           <NavLink

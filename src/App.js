@@ -7,7 +7,12 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Home } from "./components/Home";
 import { Character } from "./components/Character";
 import { NavBar } from "./components/NavBar";
+import {LastSection} from './components/LastSection'
 
+// Comics
+// https://gateway.marvel.com:443/v1/public/comics?apikey=788c8412ebf85f4bcc2e87b43c0b3ece
+
+// Characters
 // https://gateway.marvel.com:443/v1/public/characters?apikey=788c8412ebf85f4bcc2e87b43c0b3ece
 
 // public key: 788c8412ebf85f4bcc2e87b43c0b3ece
@@ -28,6 +33,7 @@ function App() {
           <Route path="/characters" element={<Character />}></Route>
           <Route path="/character/:id" element={<h1>Hola</h1>}></Route>
         </Routes>
+        <LastSection />
       </BrowserRouter>
     </div>
   );

@@ -1,5 +1,5 @@
 import { Slider } from "./Slider";
-import { Movies } from "./Movies";
+import { Comic } from "./Comic";
 
 export function Home() {
   const mockImagenes = [
@@ -11,7 +11,7 @@ export function Home() {
   return (
     <>
       <Slider imagenes={mockImagenes} />
-      <Movies />
+      <Comic />
     </>
   );
 }

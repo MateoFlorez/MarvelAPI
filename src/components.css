@@ -1,0 +1,14 @@
+.imagen:hover {
+    transform: translateY(-8px);
+    transition: all ease .5s;
+}
+
+.comic .imagen:hover ~ div h1 {
+    color: red;
+    transition: all ease .5s;
+}
+
+.boton {
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 15px;
+}

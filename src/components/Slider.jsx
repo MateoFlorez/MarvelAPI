@@ -24,7 +24,7 @@ export function Slider({ imagenes }) {
       </button>
       {imagenes.map((imagen, index) => {
         return (
-          <div className="">
+          <div key={index}>
             {carrusel === index && (
               <img key={index} src={imagen} alt="imagen" className="-z-10 h-96 mx-10"/>
             )}
