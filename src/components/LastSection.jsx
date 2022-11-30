@@ -3,7 +3,7 @@ import "../components.css"
 export function LastSection() {
     return (
         <div className="bg-black w-screen flex justify-center text-white">
-            <div className="flex box-border gap-40 py-1 cursor-pointer">
+            <div className="flex box-border gap-40 py-1 cursor-pointer items-center">
                 <figure>
                     <img src="https://terrigen-cdn-dev.marvel.com/content/prod/1x/01-mi-promo-april2020-featured-half-dsk-1140x680_4.jpg" alt=""></img>
                 </figure>
@@ -12,6 +12,7 @@ export function LastSection() {
                     <h1 className="font-bold text-2xl">Watch, Earn, Redeem!</h1>
                     <p className="mb-4">Get Rewarded for doing what you already do as a fan.</p>
                     <button className="boton bg-red-600 w-28 h-10">JOIN NOW</button>
+                    <div className="text-xs absolute -bottom-80">Terms and Conditions Apply.</div>
                 </div>
             </div>
         </div>

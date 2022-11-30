@@ -7,7 +7,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Home } from "./components/Home";
 import { Character } from "./components/Character";
 import { NavBar } from "./components/NavBar";
-import {LastSection} from './components/LastSection'
+import { LastSection } from "./components/LastSection";
+import { Footer } from "./components/Footer";
 
 // Comics
 // https://gateway.marvel.com:443/v1/public/comics?apikey=788c8412ebf85f4bcc2e87b43c0b3ece
@@ -34,6 +35,7 @@ function App() {
           <Route path="/character/:id" element={<h1>Hola</h1>}></Route>
         </Routes>
         <LastSection />
+        <Footer />
       </BrowserRouter>
     </div>
   );

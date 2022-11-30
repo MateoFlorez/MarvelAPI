@@ -25,7 +25,8 @@ export function Character() {
           <Card
             key={per.id}
             photo={`${per.thumbnail.path}.${per.thumbnail.extension}`}
-            name={per.name}          />
+            name={per.name}          
+            />
         ))}
       </div>
     </div>
