@@ -7,7 +7,6 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Home } from "./components/Home";
 import { Character } from "./components/Character";
 import { NavBar } from "./components/NavBar";
-import { LastSection } from "./components/LastSection";
 import { Footer } from "./components/Footer";
 
 // Comics
@@ -34,7 +33,6 @@ function App() {
           <Route path="/characters" element={<Character />}></Route>
           <Route path="/character/:id" element={<h1>Hola</h1>}></Route>
         </Routes>
-        <LastSection />
         <Footer />
       </BrowserRouter>
     </div>

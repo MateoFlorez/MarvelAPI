@@ -7,7 +7,7 @@ import { FaFacebookSquare, FaTwitter, FaInstagram, FaYoutube, FaSnapchatGhost, F
 export function Footer() {
   return (
     <div className="bg-stone-900 w-full flex flex-col 2xl:flex-row pt-16 gap-10 justify-between max-w-screen-md:px-28 lg:px-40 sm:px-10 py-28 h-fit">
-      <div className="grid grid-cols-3 gap-3">
+      <div className="grid grid-cols-3 gap-6">
         <NavLink to="/" className="w-28 h-32">
           <img src={marvel} alt=""></img>
         </NavLink>
@@ -30,9 +30,9 @@ export function Footer() {
       </div>
       <hr></hr>
       <nav>
-        <div className="md:space-y-7 flex">
+        <div className="flex justify-between 2xl:flex-col 2xl:gap-6">
             <a href="https://www.marvel.com/insider?cid=Dcom_navigation_20200929_insider_footer" className="flex gap-6 items-center">
-                <div className="w-16">
+                <div className="w-20">
                     <img src="https://terrigen-cdn-dev.marvel.com/content/prod/1x/marvel_insider-topnav-logo-large2x.png" alt="" />
                 </div>
                 <div className="text-white text-sm">
@@ -41,7 +41,7 @@ export function Footer() {
                 </div>
             </a>
             <a href="https://www.marvel.com/unlimited?cid=dcom_navigation_20220712_unlimited_footer" className="flex gap-6 items-center">
-                <div className="w-16">
+                <div className="w-20">
                     <img src="https://terrigen-cdn-dev.marvel.com/content/prod/1x/mu-logo-w-nav-2x-2021-02.png" alt="" />
                 </div>
                 <div className="text-white text-sm">

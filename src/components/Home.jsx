@@ -1,5 +1,7 @@
 import { Slider } from "./Slider";
 import { Comic } from "./Comic";
+import { LastSection } from "./LastSection";
+
 
 export function Home() {
   const mockImagenes = [
@@ -12,6 +14,7 @@ export function Home() {
     <>
       <Slider imagenes={mockImagenes} />
       <Comic />
+      <LastSection />
     </>
   );
 }
