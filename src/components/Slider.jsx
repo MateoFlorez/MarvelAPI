@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { VscChevronLeft, VscChevronRight } from "react-icons/vsc";
+import "../components.css"
 
 export function Slider({ imagenes }) {
   // Variables y estados
@@ -18,20 +19,27 @@ export function Slider({ imagenes }) {
   };
 
   return (
-    <div className="flex items-center justify-center bg-slate-800 w-screen">
-      <button onClick={prevImg} className="text-2xl text-white">
-        <VscChevronLeft/>
+    <div className="flex justify-center items-center bg-slate-800 w-full h-5/6 overflow-hidden">
+      <button onClick={prevImg} className="text-2xl text-white h-10">
+        <VscChevronLeft />
       </button>
       {imagenes.map((imagen, index) => {
         return (
-          <div key={index}>
+          <div key={index} className="flex overflow-hidden object-cover justify-center">
             {carrusel === index && (
-              <img key={index} src={imagen} alt="imagen" className="-z-10 h-96 mx-10"/>
+              <img
+                key={index}
+                src={imagen}
+                alt="imagen"
+                className="slider_image object-cover opacity-75"
+              />
             )}
           </div>
         );
       })}
-      <button onClick={nextImg} className="text-2xl text-white"><VscChevronRight/></button>
+      <button onClick={nextImg} className="text-2xl text-white h-10">
+        <VscChevronRight />
+      </button>
     </div>
   );
 }

@@ -12,3 +12,8 @@
     border-bottom-right-radius: 10px;
     border-top-left-radius: 15px;
 }
+
+.slider_image {
+    height: 540px;
+    width: 1200px;
+}
