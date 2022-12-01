@@ -17,3 +17,17 @@
     height: 540px;
     width: 1200px;
 }
+
+.trapecio{
+    width: 80%;
+    height: 0;
+    border-right: 130px solid transparent;
+    border-bottom: 500px solid black;
+    margin-left: -700px;
+  }
+
+.section_image {
+    height: 460px;
+    margin-left: 700px;
+}
+  
