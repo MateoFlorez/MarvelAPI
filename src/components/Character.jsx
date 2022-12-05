@@ -1,6 +1,7 @@
 import { Card } from "./Card";
-import {useState, useEffect} from 'react';
-import axios from 'axios'
+import { useState, useEffect } from "react";
+import axios from "axios";
+import { LastSection } from "./LastSection";
 
 export function Character() {
   const [characters, setCharacters] = useState([]);
@@ -19,16 +20,17 @@ export function Character() {
   console.log(characters);
 
   return (
-    <div className="App flex flex-col justify-center items-center mt-4">
-      <div className="grid grid-cols-1 gap-3 lg:grid-cols-5 md:grid-cols-3">
+    <div className="App flex flex-col justify-center items-center">
+      <div className="grid w-4/5 grid-cols-1 gap-3 lg:grid-cols-6 md:grid-cols-3 my-4 px-4">
         {characters.map((per) => (
           <Card
             key={per.id}
             photo={`${per.thumbnail.path}.${per.thumbnail.extension}`}
-            name={per.name}          
-            />
+            name={per.name}
+          />
         ))}
       </div>
+      <LastSection />
     </div>
   );
 }

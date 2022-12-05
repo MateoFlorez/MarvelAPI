@@ -13,18 +13,18 @@ export function Footer() {
         </NavLink>
         <nav className="w-32">
             <ul className="font-bold text-white text-sm space-y-3">
-                <li>ABOUT MARVEL</li>
-                <li>HELP/FAQS</li>
-                <li>CAREERS</li>
-                <li>INTERNSHIPS</li>
+                <li><a href="/">MARVEL ABOUT</a></li>
+                <li><a href="/">HELP/FAQS</a></li>
+                <li><a href="/">CAREERS</a></li>
+                <li><a href="/">INTERNSHIPS</a></li>
             </ul>
         </nav>
         <nav className="w-32">
             <ul className="text-white text-sm space-y-3">
-                <li>ADVERTISING</li>
-                <li>DISNEY+</li>
-                <li>MARVELHQ.COM</li>
-                <li>REDEEM DIGITAL COMICS</li>
+                <li><a href="/">ADVERTISING</a></li>
+                <li><a href="/">DISNEY+</a></li>
+                <li><a href="/">MARVELHQ.COM</a></li>
+                <li><a href="/">REDEEM DIGITAL COMICS</a></li>
             </ul>
         </nav>
       </div>

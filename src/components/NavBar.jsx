@@ -4,7 +4,7 @@ import logo from "../assets/logo.png";
 
 export function NavBar() {
   return (
-    <nav className="bg-stone-900 py-4 flex items-center justify-center font-bold text-white w-full">
+    <nav className="bg-stone-900 py-2 flex items-center justify-center font-bold text-white w-full sticky top-0 z-50">
       <ul className="flex items-center">
         <li className="">
           <NavLink
@@ -20,7 +20,7 @@ export function NavBar() {
         </li>
         <li>
           <NavLink to="/">
-            <img src={logo} className="h-16 w-64 cursor-pointer" alt=""></img>
+            <img src={logo} className="h-14 w-52 cursor-pointer" alt=""></img>
           </NavLink>
         </li>
         <li className="">

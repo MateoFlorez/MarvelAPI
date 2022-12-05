@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 import { ComicCard } from "./ComicCard";
 import "../components.css"
+import { ComicSection } from "./ComicSection";
 
 
 export function Comic() {
@@ -22,7 +23,8 @@ export function Comic() {
 
   return (
     <>
-      <div className="App flex flex-row justify-center items-center bg-white p-3 w-4/6 md:-mt-16 z-10">
+      <ComicSection />
+      <div className="App flex flex-row justify-center items-center bg-white p-3 w-4/6 md:-mt-9 z-10">
         <div className="grid grid-cols-2 lg:grid-cols-4 md:grid-cols-2 gap-2">
           {comics.slice(0, 4).map((comic) => (
             <ComicCard
