@@ -16,7 +16,7 @@ const Search = ({search}) => {
             className='form-control w-full p-3 placeholder:italic rounded-xl shadow-xl border-slate-300 focus:outline-none focus:ring-1 focus:border-red-400 focus:ring-red-600' 
             placeholder='Find a character' 
             autoFocus 
-            onChange={(e) => onSearch(e.target.value)} 
+            onChange={(e) => onSearch(e.target.value)}
             value={text}/>
         </form>
     </section>
