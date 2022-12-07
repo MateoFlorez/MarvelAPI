@@ -7,7 +7,7 @@ export function Card({ photo, name, id, description }) {
       <div className="content-inner" key={id}>
         <div className="content-front">
           <img
-            className="h-72 w-full object-cover"
+            className="h-96 w-full object-cover"
             src={photo}
             alt=""
             loading="lazy"
